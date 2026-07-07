@@ -11,9 +11,8 @@ st.set_page_config(page_title="Extractor de Asistencia - Construmarz", page_icon
 st.title("📝 Extractor Inteligente de Asistencia")
 st.write("Sube la foto o el PDF de asistencia de Inversiones Construmarz para generar el Excel.")
 
-# 2. Configurar la API Key de forma segura
-# (En la nube no es seguro dejarla escrita en el código, luego te enseño dónde ponerla)
-API_KEY = st.secrets["GEMINI_API_KEY"]
+# 2. Configurar la API Key de forma directa
+API_KEY = "AQ.Ab8RN6IVa051nUIncU0rd0VptB7_3rEd_eusBFPZRH7GY0U63w"
 client = genai.Client(api_key=API_KEY)
 
 # 3. Botón web para subir el archivo
